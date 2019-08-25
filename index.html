@@ -10,15 +10,14 @@
 
 <body>
     <script>
-        var obj = {
-            x: 10,
-            fn: function() {
-                console.log(this.x)
-            }
-        };
-        var a = obj.fn;
-        obj.fn() //输出什么？提示：方法调用
-        a(); //输出什么？ 提示：普通调用
+        var user = "渡一";
+
+        function fn() {
+            user = "王者";
+            return;
+        }
+        fn();
+        console.log(user);
     </script>
 </body>
 
